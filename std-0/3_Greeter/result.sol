@@ -13,10 +13,16 @@ contract Greeter {
      * @dev Sets greeting message
      * @param message greeting message by user 
      */
-
+    
+    function greet(string memory message) public {
+        _greeting = message;
+    }
 
     /**
      * @dev Returns greeting message
      */
 
+    function getGreeting() public view returns (string memory){
+        return _greeting;
+    }
 }

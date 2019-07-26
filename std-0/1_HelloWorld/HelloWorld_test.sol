@@ -10,7 +10,8 @@ contract HelloWorldTest {
   }
 
   function checkPrint () public {
-    Assert.equal(helloWorld.print(), string('Hello World!'), "Method 'print' should return 'Hello World!'");
+    string result = helloWorld.print();
+    Assert.equal(result, string('Hello World!'), "Method 'print' should return 'Hello World!'");
   }
 
 }

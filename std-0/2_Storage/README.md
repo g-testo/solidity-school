@@ -1,7 +1,8 @@
 # Storage
 ## Problem Statement
 
-Write a contract to set a hard coded value (e.g: suppose 5) to an integer variable. User can check its value anytime without consuming gas. 
+Write a contract to set a hard coded value of "5" to an *integer* variable.
+User can check its value anytime without consuming gas. 
 
 ## Informational Hint
 ### Integer
