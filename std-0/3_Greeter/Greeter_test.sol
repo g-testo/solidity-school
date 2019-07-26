@@ -11,7 +11,7 @@ contract GreeterTest {
 
   function checkGreeter () public {
     greeter.greet('Hello World!');
-    string result = greeter.getGreeting();
+    string memory result = greeter.getGreeting();
     Assert.equal(result, string('Hello World!'), "Method 'greet' should store a message");
   }
 
