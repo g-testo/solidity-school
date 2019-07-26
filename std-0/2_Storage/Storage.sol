@@ -12,15 +12,10 @@ contract Storage {
     /**
      * @dev Stores value in variable 'n' 
      */
-    
-    function store() public {
-        n = 5;
-    }
 
     /**
      * @dev Returns value of 'n'
      */
-
     function get() public view returns (uint256){
         return n;
     }
