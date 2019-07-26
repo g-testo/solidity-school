@@ -1,8 +1,8 @@
 pragma solidity >=0.5.0 <0.6.0;
 import "remix_tests.sol";
-import "./hello-world_test.sol";
+import "./HelloWorld.sol";
 
-contract test3 {
+contract HelloWorldTest {
 
   HelloWorld helloWorld;
   function beforeEach() public {
