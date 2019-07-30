@@ -9,5 +9,7 @@ pragma solidity ^0.5.0;
 contract HelloWorld {
 
     // Create a pure function "print" that returns "Hello World!"
+    function print() public pure returns (string memory){
 
+    }
 }
