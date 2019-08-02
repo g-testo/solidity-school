@@ -1,18 +1,28 @@
-pragma solidity >=0.5.0 <0.6.0;
-import "remix_tests.sol";
-import "./Greeter.sol";
+pragma solidity ^0.5.0;
 
-contract GreeterTest {
+/**
+ * @title Greeter
+ * @dev This contract sets greeting string and returns it on user demand
+ */
 
-  Greeter greeter;
-  function beforeEach() public {
-    greeter = new Greeter();
-  }
+contract Greeter {
 
-  function checkGreeter () public {
-    greeter.greet('Hello World!');
-    string memory result = greeter.getGreeting();
-    Assert.equal(result, string('Hello World!'), "Method 'greet' should store a message");
-  }
+    string private _greeting;
 
+    /**
+     * @dev Sets greeting message
+     * @param message greeting message by user 
+     */
+    // TODO: Create a "greet" method that store a message in the storage.
+    function greet(string memory message) public {
+        _greeting = message;
+    }
+
+    /**
+     * @dev Returns greeting message
+     */
+    // TODO: Create a "getGreeting" method that read the "_greeting" value of the storage
+    function getGreeting() public view returns (string memory){
+        return _greeting;
+    }
 }
