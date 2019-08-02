@@ -13,7 +13,6 @@ contract Greeter {
      * @dev Sets greeting message
      * @param message greeting message by user 
      */
-    // TODO: Create a "greet" method that store a message in the storage.
     function greet(string memory message) public {
         _greeting = message;
     }
@@ -21,7 +20,6 @@ contract Greeter {
     /**
      * @dev Returns greeting message
      */
-    // TODO: Create a "getGreeting" method that read the "_greeting" value of the storage
     function getGreeting() public view returns (string memory){
         return _greeting;
     }

@@ -13,10 +13,10 @@ contract Greeter {
      * @dev Sets greeting message
      * @param message greeting message by user 
      */
-
+    // TODO: Create a "greet" method that store a message in the storage.
 
     /**
      * @dev Returns greeting message
      */
-
+    // TODO: Create a "getGreeting" method that read the "_greeting" value of the storage
 }
