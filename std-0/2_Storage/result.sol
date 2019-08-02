@@ -10,10 +10,10 @@ contract Storage {
     uint256 n;
 
     /**
-     * @dev Stores value in variable 'n' 
+     * @dev Create a method "set" that stores the value 5 in variable 'n' 
      */
     
-    function store() public {
+    function set() public {
         n = 5;
     }
 
