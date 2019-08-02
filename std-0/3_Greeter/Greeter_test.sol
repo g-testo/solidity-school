@@ -4,9 +4,9 @@ import "./Greeter.sol";
 
 contract GreeterTest {
 
-  Greeter helloWorld;
+  Greeter greeter;
   function beforeEach() public {
-    greeter = new HelloWorld();
+    greeter = new Greeter();
   }
 
   function checkGreeter () public {
