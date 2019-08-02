@@ -4,13 +4,13 @@ import "./Storage.sol";
 
 contract StorageTest {
 
-  Storage helloWorld;
+  Storage storageContract;
   function beforeEach() public {
     storageContract = new Storage();
   }
 
   function checkStore () public {
-    storageContract.store();
+    storageContract.set();
     Assert.equal(storageContract.get(), uint(5), "Method 'store' should set a storage value to '5'.");
   }
 
